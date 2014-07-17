@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "BuzzKill",
+  "description": "This extension prevents unintentionally being directed to BuzzFeed.com and instead sends you to ClickHole.com.",
+  "version": "1.0",
+  "author": "Tim Russo",
+  
+  "content_scripts": [
+	{
+    	"matches": ["http://*.buzzfeed.com/*"],
+    	"js": ["buzzkill.js"]
+	}
+  ],
+  
+  "icons": {
+  		"128": "icon_128.png"
+  }
+}
